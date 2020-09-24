@@ -80,3 +80,12 @@ const contactMeBtn = document.querySelector(".home__contact");
 contactMeBtn.addEventListener("click", () => {
   contact.scrollIntoView({ behavior: "smooth" });
 });
+
+// 스크롤 시 투명해지게
+
+const homeContainer = document.querySelector(".home__container");
+const homeHeight = home.getBoundingClientRect().height;
+
+document.addEventListener("scroll", () => {
+  homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
+});
