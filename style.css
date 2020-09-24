@@ -103,6 +103,7 @@ p {
   color: var(--color-white);
   padding: 12px 40px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -135,7 +136,7 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 20px;
+  top: 16px;
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
