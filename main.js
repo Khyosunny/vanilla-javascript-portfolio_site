@@ -21,12 +21,12 @@ navbarMenu.addEventListener("click", (event) => {
   } else {
     navbarMenu.classList.remove("open");
     const scrollTo = document.querySelector(link);
-    const top = scrollTo.offsetTop - navbarHeight;
-    // scrollTo.scrollIntoView({ behavior: "smooth" });
-    window.scrollTo({
-      top: top,
-      behavior: "smooth",
-    });
+    // const top = scrollTo.offsetTop - navbarHeight;
+    scrollTo.scrollIntoView({ behavior: "smooth" });
+    // window.scrollTo({
+    //   top: top,
+    //   behavior: "smooth",
+    // });
   }
 });
 

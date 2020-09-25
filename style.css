@@ -184,7 +184,7 @@ p {
 /* Section common */
 
 .section {
-  padding: 50px;
+  padding: 80px 50px 80px 50px;
   text-align: center;
   margin: auto;
 }
@@ -531,7 +531,7 @@ p {
   }
 
   .section {
-    padding: 16px;
+    padding: 40px 16px 16px 16px;
   }
 
   .about__majors {
