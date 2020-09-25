@@ -89,3 +89,20 @@ const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
   homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+// 스크롤 시 Arrow up 버튼 활성화
+
+const arrowUp = document.querySelector(".arrow-up");
+const arrowStart = homeHeight / 2;
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > arrowStart) {
+    arrowUp.classList.add("visible");
+  } else {
+    arrowUp.classList.remove("visible");
+  }
+});
+
+arrowUp.addEventListener("click", () => {
+  home.scrollIntoView({ behavior: "smooth" });
+});
