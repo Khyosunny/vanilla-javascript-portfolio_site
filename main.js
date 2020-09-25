@@ -19,6 +19,7 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   } else {
+    navbarMenu.classList.remove("open");
     const scrollTo = document.querySelector(link);
     const top = scrollTo.offsetTop - navbarHeight;
     // scrollTo.scrollIntoView({ behavior: "smooth" });
@@ -28,6 +29,14 @@ navbarMenu.addEventListener("click", (event) => {
     });
   }
 });
+
+// navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
+});
+
+// id 지정
 
 const home = document.querySelector("#home");
 const about = document.querySelector("#about");
